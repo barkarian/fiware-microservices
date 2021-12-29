@@ -17,6 +17,13 @@ app.use("/api/subscriptions", require("./subscriptions/subscriptions.routes"));
 app.use("/api/admin", require("./admin/admin.routes"));
 app.use("/api/user", require("./user/user.routes"));
 
+app.get(
+  ("/",
+  function (req, res) {
+    res.send("Hello world from port 5000");
+  })
+);
+
 app.listen(5000, () => {
   console.log("server is running on port 5000");
 });
