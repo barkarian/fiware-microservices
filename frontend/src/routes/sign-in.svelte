@@ -11,6 +11,7 @@
         // Content-Type: application/json
 
         // {"email":"email1@gmail.com","password":"password123"}
+        console.log(API_URL)
         try {
             const response=await fetch("http://localhost:5000/auth/login",{
                 method:"POST",
